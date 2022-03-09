@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
-contract HelloWorld {
+contract HelloWorldSmartContract {
     string public greetings;
 
-    constructor() {
-       greetings = "Welcome to Blockgames, please enter your greetings";
+    constructor(string memory _hello) {
+       greetings = _hello;
     }
 
     //create a function that reads the greeting from the smart contract
